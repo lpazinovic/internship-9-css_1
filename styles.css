@@ -14,7 +14,7 @@ body {
   background-color: #6e7801;
   padding: 10px;
   margin: 0;
-  z-index: 3;
+  z-index: 2;
 }
 
 .navigation-item {
@@ -75,7 +75,7 @@ body {
   background-color: #232420;
   position: sticky;
   top: 50px;
-  z-index: 2;
+  z-index: 1;
   color: white;
   justify-content: center;
   text-align: center;
@@ -102,6 +102,7 @@ body {
 }
 
 .highlight-div-one{
+    margin-top: -125px;
     width: 500px;
     background-color: #fff;
     padding: 10px;
@@ -113,3 +114,9 @@ body {
     font-weight: bold;
 }
 
+.background-transition{
+    width: 100vw;
+    height: 125px;
+    background-color: gray;
+    z-index: -1;
+}
