@@ -22,14 +22,11 @@ body {
   margin: 1px;
   padding: 5px;
   color: white;
-  text-transform: uppercase;
 }
 
 .navigation-item:first-child {
   position: absolute;
-  left: 1px;
-  margin: 1px;
-  padding: 5px;
+  left: 0px;
 }
 
 .content-wrapper {
@@ -74,7 +71,7 @@ body {
   height: 150px;
   background-color: #232420;
   position: sticky;
-  top: 50px;
+  top: calc(150px - 82px);
   z-index: 1;
   color: white;
   justify-content: center;
@@ -101,22 +98,69 @@ body {
   background-color: gray;
 }
 
-.highlight-div-one{
-    margin-top: -125px;
-    width: 500px;
-    background-color: #fff;
-    padding: 10px;
+.highlight-div-one {
+  margin-top: -125px;
+  width: 500px;
+  background-color: #fff;
+  padding: 10px;
 }
 
-.highlight-one-title{
-    text-align: center;
-    font-size: 50px;
-    font-weight: bold;
+.highlight-one-title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
 }
 
-.background-transition{
-    width: 100vw;
-    height: 125px;
-    background-color: gray;
-    z-index: -1;
+.background-transition {
+  width: 100vw;
+  height: 125px;
+  background-color: gray;
+  z-index: -1;
+}
+
+.main__button {
+  border: transparent solid 0px;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+.main__button:hover {
+  cursor: pointer;
+}
+
+.main__button--navigation,
+.main__button--navigation--about,
+.main__button--navigation--title {
+  color: white;
+}
+
+.main__button--navigation--title {
+  font-weight: lighter;
+}
+
+.main__button--navigation--about:hover,
+.main__button--navigation--title:hover,
+.main__button--navigation--about:focus,
+.main__button--navigation--title:focus {
+  color: black;
+}
+
+.main__button--footer {
+  border: 2px solid gold;
+  color: gold;
+}
+
+.main__button--highlight-one{
+    border: 2px solid black;
+}
+
+.main__button--footer:hover,
+.main__button--highlight-one:hover,
+.main__button--footer:focus,
+.main__button--highlight-one:focus {
+    color: white;
+    background-color: #20154a;
+    border: 2px solid #20154a;
 }
