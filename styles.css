@@ -15,6 +15,7 @@ body {
   padding: 10px;
   margin: 0;
   z-index: 2;
+  width: 100%;
 }
 
 .navigation-item {
@@ -67,7 +68,7 @@ body {
 }
 
 .footer {
-  width: 100vw;
+  width: 100%;
   height: 150px;
   background-color: #232420;
   position: sticky;
@@ -93,7 +94,8 @@ body {
 }
 
 .footer-wrapper {
-  margin-top: calc(92vh - 150px);
+  width: 100%;
+  margin-top: calc(94vh - 150px);
   height: calc(75vh + 150px);
   background-color: gray;
 }
@@ -112,7 +114,7 @@ body {
 }
 
 .background-transition {
-  width: 100vw;
+  width: 100%;
   height: 125px;
   background-color: gray;
   z-index: -1;
@@ -128,6 +130,7 @@ body {
 
 .main__button:hover {
   cursor: pointer;
+  border: 0px solid transparent;
 }
 
 .main__button--navigation,
@@ -152,15 +155,15 @@ body {
   color: gold;
 }
 
-.main__button--highlight-one{
-    border: 2px solid black;
+.main__button--highlight-one {
+  border: 2px solid black;
 }
 
 .main__button--footer:hover,
 .main__button--highlight-one:hover,
 .main__button--footer:focus,
 .main__button--highlight-one:focus {
-    color: white;
-    background-color: #20154a;
-    border: 2px solid #20154a;
+  color: white;
+  background-color: #20154a;
+  border: 2px solid #20154a;
 }
