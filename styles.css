@@ -3,31 +3,31 @@ body {
   height: 2000px;
 }
 
-.navigation {
+.navigation__list {
   position: fixed;
   left: 0;
   top: 0;
   right: 0;
   display: flex;
-  justify-content: right;
+  align-items: center;
+  justify-content: space-between;
   list-style: none;
   background-color: #6e7801;
-  padding: 10px;
+  padding: 10px 0px;
   margin: 0;
   z-index: 2;
   width: 100%;
 }
 
-.navigation-item {
-  display: flex;
-  margin: 1px;
-  padding: 5px;
+.navigation__list-item {
+  margin: 1px 0px;
+  padding: 5px 0px;
   color: white;
+  flex-grow: 1;
 }
 
-.navigation-item:first-child {
-  position: absolute;
-  left: 0px;
+.navigation__list-item:first-child {
+  flex-grow: 25;
 }
 
 .content-wrapper {
@@ -39,7 +39,7 @@ body {
   position: relative;
 }
 
-.title-div {
+.main__div {
   display: inline-block;
   text-align: center;
   flex-direction: column;
@@ -60,7 +60,7 @@ body {
   margin-bottom: 10px;
 }
 
-.main-title {
+.main__title {
   display: block;
   margin-top: 15%;
   font-weight: lighter;
@@ -81,7 +81,7 @@ body {
   display: flex;
 }
 
-.footer-text {
+.footer__text {
   width: 500px;
   position: absolute;
   right: calc(50%-500px);
@@ -100,14 +100,14 @@ body {
   background-color: gray;
 }
 
-.highlight-div-one {
+.highlight {
   margin-top: -125px;
   width: 500px;
   background-color: #fff;
   padding: 10px;
 }
 
-.highlight-one-title {
+.highlight__title {
   text-align: center;
   font-size: 50px;
   font-weight: bold;
@@ -122,7 +122,7 @@ body {
 
 .main__button {
   border: transparent solid 0px;
-  padding: 10px 40px;
+  padding: 10px 20px;
   text-transform: uppercase;
   font-weight: bold;
   background-color: transparent;
@@ -155,14 +155,14 @@ body {
   color: gold;
 }
 
-.main__button--highlight-one {
+.main__button--highlight {
   border: 2px solid black;
 }
 
 .main__button--footer:hover,
-.main__button--highlight-one:hover,
+.main__button--highlight:hover,
 .main__button--footer:focus,
-.main__button--highlight-one:focus {
+.main__button--highlight:focus {
   color: white;
   background-color: #20154a;
   border: 2px solid #20154a;
